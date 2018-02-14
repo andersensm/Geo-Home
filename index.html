@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!--Bootstrap CSS -->
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link href="./assets/css/now-ui-kit.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cosmo/bootstrap.min.css" rel="stylesheet">
+
+  <!--Boostrap & jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <title>GeoHOME-Main</title>
+</head>
+
+<body>
+  <div class="firstImage">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar-transparent ">
+      <i class="fa fa-globe fa-2x" aria-hidden="true"> </i><p class="font20">Geo<strong>HOME</strong></p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary red" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Main </a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Zillow API" data-content="Use the House Search Icon in the navigation bar to explore the Zillow API and get all the details you need about your potential dream home. Once you review the information about the home you like, the rest of the content is at your disposal to find out if it really fits your needs!"
+              class="btn btn-outline-secondary" href="zillow.html"><i class="fa fa-search" aria-hidden="true"></i> House Details</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Places" data-content="Use the Activities Icon in the navigation bar to explore the Google Maps API and find activities near your future home!" class="btn btn-outline-secondary"
+              href="googleplaces.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Activities</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Traffic" data-content="Use the Traffic Icon in the navigation bar to explore the Google Maps API and find traffic hotspots near your future home!" class="btn btn-outline-secondary"
+              href="#"><i class="fa fa-car" aria-hidden="true"></i> Traffic</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="ESRI Rest API" data-content="Use the Demographics Icon to find out all the information needed to put your mind at ease in the area of your future home." class="btn btn-outline-secondary"
+              href="arcgis-api.html"><i class="fa fa-book" aria-hidden="true"></i> Demographics</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Federal Bureau Of Investigation API" data-content="Crime in a particular area is always a question, when considering a new home. Use the Crime Icon to find out if your future home is in a good location with low levels of crime using statistics from the FBI API."
+              class="btn btn-outline-secondary" href="#"><i class="fa fa-crosshairs" aria-hidden="true"></i> Crime</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="National Oceanic and Atmospheric Administration API" data-content="Sea Level Rise is increasing everyday. Use the Sea Level Rise Icon to find out if your future home is at risk of sea level rise, data gathered from the NOAA API and analyzed against your future home's terrain elevation."
+              class="btn btn-outline-secondary" href="#"><i class="fa fa-ship" aria-hidden="true"></i> Sea Level Rise</a>
+          </li>
+          <li class="nav-item">
+            <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="United States Geological Survey API" data-content="Use the Earthquakes Icon to find out all seismic activity that is happening daily in the area of your future home, brought to you by the USGS API."
+              class="btn btn-outline-secondary" href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Earthquakes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-1">
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-9 dream">
+          <h1>Explore your dream <strong>home</strong>.</h1>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--Row 1 -->
+  <div class="row margin">
+    <!--Zillow Info -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+      <div class="card text-white bg-primary mb-3 float-right" style="max-width: 20rem;">
+        <div class="card-header zw">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 ">
+              <h3><i>House Details</i></h3>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 zillow">
+            </div>
+          </div>
+
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Zillow API</h4>
+          <p class="card-text">Tap into the Zillow search engine and investigate the potential house of your dreams! </p>
+          <p>Once you review the home, the rest of the content is at your disposal to find out if it really fits your needs.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 secondImage"></div>
+    <!--Zillow Info -->
+    <!--Google Info -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+      <div class="card text-white bg-success mb-3 google" style="max-width: 20rem;">
+        <div class="card-header red">
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <h3><i>Activities & Traffic</i></h3>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 gm">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Google Maps API</h4>
+          <p class="card-text">Put in the address of your future home and find all the activities one would ever need! </p>
+          <p>Before buying a home, make sure the daily commute is going to be worth it.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 thirdImage"></div>
+    <!--Google Info -->
+  </div>
+  <!--Row 1 -->
+  <!-- Row 2-->
+  <div class="row margin">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+      <div class="card text-white bg-secondary mb-3 float-right" style="max-width: 20rem;">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-10">
+              <h3><i>Demographics</i></h3></h3>
+            </div>
+            <div class="col-md-2 esri">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Esri Rest API</h4>
+          <p class="card-text">What kind of area are you moving into? </p>
+          <p>Find out everything from population density to median household income.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 fourthImage"></div>
+
+  </div>
+  <!-- Row 2-->
+
+
+
+
+
+  <div class="footer">
+
+    <!--
+    <div class="row">
+      <button type="button" class="mainIcon houseSearchBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Zillow API" data-content="Use the House Search Icon in the navigation bar to explore the Zillow API and find the house of your dreams. Once you find a home you like, the rest of the content is at your disposal to find out if it really fits your needs!"></button>
+      <button type="button" class="mainIcon googleMapsBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Places" data-content="Use the Activities Icon in the navigation bar to explore the Google Maps API and find activities near your future home!"></button>
+      <button type="button" class="mainIcon trafficBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Traffic" data-content="Use the Traffic Icon in the navigation bar to explore the Google Maps API and find traffic hotspots near your future home!"></button>
+      <button type="button" class="mainIcon crimeBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Federal Bureau Of Investigation API" data-content="Crime in a particular area is always a question, when considering a new home. Use the Crime Icon to find out if your future home is in a good location with low levels of crime using statistics from the FBI API."></button>
+      <button type="button" class="mainIcon demoBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="ESRI Rest API" data-content="Use the Demographics Icon to find out all the information needed to put your mind at ease in the area of your future home."></button>
+      <button type="button" class="mainIcon seaBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="National Oceanic and Atmospheric Administration API" data-content="Sea Level Rise is increasing everyday. Use the Sea Level Rise Icon to find out if your future home is at risk of sea level rise, data gathered from the NOAA API and analyzed against your future home's terrain elevation."></button>
+      <button type="button" class="mainIcon earthquakeBox" data-placement="bottom" data-trigger="hover" data-toggle="popover" title="United States Geological Survey API" data-content="Use the Earthquakes Icon to find out all seismic activity that is happening daily in the area of your future home, brought to you by the USGS API."></button>
+    </div>
+  -->
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://js.arcgis.com/4.6/"></script>
+  <script type="text/javascript" src="assets/javascript/arcgis.js"></script>
+  <script src="https://use.fontawesome.com/7cd611b726.js"></script>
+
+
+</body>
+
+</html>

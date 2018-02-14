@@ -1,0 +1,52 @@
+html, body {
+  background-image: url("../images/City-Test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+#mapView {
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  border: black 1.5px solid;
+}
+#mapContainer {
+  padding: 2em;
+  border-radius: 20px;
+  background-image: url("../images/Wood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: black 1.5px solid;
+  box-shadow: 10px 10px 10px black;
+}
+a.btn.btn-outline-secondary {
+  border-radius: 15px;
+  border: 0px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+a.btn.btn-outline-secondary.red {
+  color: red;
+}
+a.navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+.navbar a:not(.btn):not(.dropdown-item) {
+  color: white;
+}
+.font20 {
+  font-size: 20px;
+}
+.margin {
+  box-shadow: 10px 10px 10px black;
+}
+#zillow {
+  margin: 20px;
+}

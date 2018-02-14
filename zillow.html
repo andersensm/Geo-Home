@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!--Bootstrap CSS -->
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link href="./assets/css/now-ui-kit.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/zillow.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/cosmo/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <title>GeoHOME-ZillowAPI</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light navbar-transparent ">
+    <i class="fa fa-globe fa-2x" aria-hidden="true"> </i>
+    <p class="font20">Geo<strong>HOME</strong></p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Main </a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Zillow API" data-content="Use the House Search Icon in the navigation bar to explore the Zillow API and get all the details you need about your potential dream home. Once you review the information about the home you like, the rest of the content is at your disposal to find out if it really fits your needs!"
+            class="btn btn-outline-secondary red" href="zillow.html"><i class="fa fa-search" aria-hidden="true"></i> House Details</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Places" data-content="Use the Activities Icon in the navigation bar to explore the Google Maps API and find activities near your future home!" class="btn btn-outline-secondary"
+            href="googleplaces.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Activities</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Google Maps API- Traffic" data-content="Use the Traffic Icon in the navigation bar to explore the Google Maps API and find traffic hotspots near your future home!" class="btn btn-outline-secondary"
+            href="#"><i class="fa fa-car" aria-hidden="true"></i> Traffic</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="ESRI Rest API" data-content="Use the Demographics Icon to find out all the information needed to put your mind at ease in the area of your future home." class="btn btn-outline-secondary"
+            href="arcgis-api.html"><i class="fa fa-book" aria-hidden="true"></i> Demographics</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="Federal Bureau Of Investigation API" data-content="Crime in a particular area is always a question, when considering a new home. Use the Crime Icon to find out if your future home is in a good location with low levels of crime using statistics from the FBI API."
+            class="btn btn-outline-secondary" href="#"><i class="fa fa-crosshairs" aria-hidden="true"></i> Crime</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="National Oceanic and Atmospheric Administration API" data-content="Sea Level Rise is increasing everyday. Use the Sea Level Rise Icon to find out if your future home is at risk of sea level rise, data gathered from the NOAA API and analyzed against your future home's terrain elevation."
+            class="btn btn-outline-secondary" href="#"><i class="fa fa-ship" aria-hidden="true"></i> Sea Level Rise</a>
+        </li>
+        <li class="nav-item">
+          <a data-placement="bottom" data-trigger="hover" data-toggle="popover" title="United States Geological Survey API" data-content="Use the Earthquakes Icon to find out all seismic activity that is happening daily in the area of your future home, brought to you by the USGS API."
+            class="btn btn-outline-secondary" href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Earthquakes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-5 text-white bg-secondary mb-3 margin">
+        <div>
+          <label class="col-form-label col-form-label-sm" for="inputSmall">Address</label>
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="address">
+          <label class="col-form-label col-form-label-sm" for="inputSmall">City</label>
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="city">
+          <label class="col-form-label col-form-label-sm" for="inputSmall">State</label>
+          <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="state">
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Boostrap & jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/javascript/zillow.js"></script>
+  <script src="https://use.fontawesome.com/7cd611b726.js"></script>
+</body>
+
+</html>

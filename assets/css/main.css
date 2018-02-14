@@ -1,0 +1,164 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.firstImage {
+  background-image: url("../images/City3-Test.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secondImage {
+
+  background-image: url("../images/HomeSearch-Test2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+.thirdImage {
+
+  background-image: url("../images/Traffic-Test.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+.fourthImage {
+
+  background-image: url("../images/People-Test.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+}
+.zillow {
+  background-image: url("../images/Zillow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.gm {
+  background-image: url("../images/GoogleMaps.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.esri {
+  background-image: url("../images/esri.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-header.zw {
+  background-color: #0074e4;
+}
+.card-header.red {
+  background-color: red;
+}
+.card.google {
+  border: yellow 2px solid;
+}
+.margin {
+  margin-top: 2em;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+h1 {
+  text-align: center;
+}
+a.btn.btn-outline-secondary {
+  border-radius: 15px;
+  border: 0px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+a.btn.btn-outline-secondary.red {
+  color: red;
+}
+a.navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+.navbar a:not(.btn):not(.dropdown-item) {
+  color: white;
+}
+.mainIcon:hover {
+  opacity: .6;
+}
+.title {
+  color: black;
+  font-weight: bold;
+}
+.font20 {
+  font-size: 20px;
+}
+.dream {
+  color: white;
+  font-weight: 400;
+}
+/*
+@media screen and (max-width: 1024px) {
+  a.btn.btn-outline-secondary {
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+  }
+  a.navbar-brand {
+    color: white;
+    font-size: 2rem;
+  }
+  .navbar a:not(.btn):not(.dropdown-item) {
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstImage {
+    background-image: url("../images/City3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 500px) {
+  .firstImage {
+    background-image: url("../images/City3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  a.btn.btn-outline-secondary {
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+  }
+  a.navbar-brand {
+    color: white;
+    font-size: 2rem;
+  }
+  .navbar a:not(.btn):not(.dropdown-item) {
+    color: white;
+  }
+}
+@media screen and (max-width: 375px) {
+  .firstImage {
+    background-image: url("../images/City3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  a.btn.btn-outline-secondary {
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+  }
+  a.navbar-brand {
+    color: white;
+    font-size: 2rem;
+  }
+  .navbar a:not(.btn):not(.dropdown-item) {
+    color: white;
+  }
+}
