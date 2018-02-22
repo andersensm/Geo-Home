@@ -3,7 +3,7 @@
 
 ## **Screenshots**
 
-![Home page](images/Main.png?raw=true "Home Page")
+![Alt Text](images/Main.png?raw=true "Home Page")
 
 ![Google Maps Places Library](images/Places.png?raw=true "Google Maps Places Library")
 
