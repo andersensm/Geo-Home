@@ -8,6 +8,10 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
+$("#test,#test2,#test3,#test4,#test5").on("click", function(){
+  alert("Under Development, 'Activities' and 'Demographics' Tabs currently available.")
+})
+
 require([
   "esri/Map",
   "esri/views/MapView",

@@ -12,6 +12,10 @@ var veryBestPic = ""
 var placeId = ""
 var placeMarker = []
 
+$("#test,#test2,#test3,#test4,#test5").on("click", function(){
+  alert("Under Development, 'Activities' and 'Demographics' Tabs currently available.")
+})
+
 function googleMaps() {
 
   $(function () {

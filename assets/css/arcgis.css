@@ -44,3 +44,7 @@ a.navbar-brand {
 .font20 {
   font-size: 20px;
 }
+.arcGisFooter{
+  color: red;
+  font-weight: bold;
+}
